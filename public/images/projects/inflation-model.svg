@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#0a0f1e"/>
+  <g stroke="rgba(255,255,255,0.15)" stroke-width="1">
+    <path d="M90 105H720M90 165H720M90 225H720M90 285H720"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="2">
+    <path d="M90 345H720"/>
+    <path d="M90 90V345"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="rgba(255,255,255,0.58)" font-size="10">
+    <text x="96" y="366">2018</text>
+    <text x="205" y="366">2019</text>
+    <text x="315" y="366">2020</text>
+    <text x="425" y="366">2021</text>
+    <text x="535" y="366">2022</text>
+    <text x="645" y="366">2023</text>
+  </g>
+  <g fill="#12182a" stroke="rgba(255,255,255,0.14)">
+    <rect x="96" y="40" width="122" height="34" rx="10"/>
+    <rect x="555" y="38" width="178" height="82" rx="14"/>
+  </g>
+  <text x="114" y="62" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="11">Inflation Rate %</text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#ffffff">
+    <circle cx="576" cy="60" r="4" fill="#60a5fa"/><text x="588" y="64">Actual</text>
+    <circle cx="576" cy="82" r="4" fill="#34d399"/><text x="588" y="86">ARIMA</text>
+    <circle cx="576" cy="104" r="4" fill="#f472b6"/><text x="588" y="108">Random Forest</text>
+  </g>
+  <path d="M112 280 C160 210 212 244 250 194 S340 178 390 138 S460 180 512 126 S604 154 696 108" fill="none" stroke="#60a5fa" stroke-width="4"/>
+  <path d="M512 126 C560 114 610 128 696 152" fill="none" stroke="#34d399" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M512 126 C560 140 610 162 696 174" fill="none" stroke="#f472b6" stroke-width="4" stroke-dasharray="10 8"/>
+</svg>

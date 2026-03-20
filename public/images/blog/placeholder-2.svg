@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#0f172a"/>
+  <g fill="#0b1220" stroke="rgba(255,255,255,0.12)">
+    <rect x="102" y="164" width="160" height="110" rx="22"/>
+    <rect x="320" y="164" width="160" height="110" rx="22"/>
+    <rect x="538" y="164" width="160" height="110" rx="22"/>
+  </g>
+  <rect x="120" y="184" width="124" height="70" rx="18" fill="#3b82f6"/>
+  <rect x="338" y="184" width="124" height="70" rx="18" fill="#7c3aed"/>
+  <rect x="556" y="184" width="124" height="70" rx="18" fill="#10b981"/>
+  <g fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">
+    <text x="141" y="226">Raw Data</text>
+    <text x="363" y="226">Transform</text>
+    <text x="584" y="226">Insights</text>
+  </g>
+  <g stroke="rgba(255,255,255,0.5)" stroke-width="4" fill="none" marker-end="url(#pipeArrow)">
+    <path d="M244 219H314"/>
+    <path d="M462 219H532"/>
+  </g>
+  <defs>
+    <marker id="pipeArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="rgba(255,255,255,0.65)"/>
+    </marker>
+  </defs>
+</svg>

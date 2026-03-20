@@ -1,0 +1,44 @@
+---
+title: "Building a Multilingual Image Generation Pipeline at KDD Lab"
+summary: "A look at Talha Arshad's summer research internship work on multilingual prompting, Stable Diffusion, and multi-prompt image generation."
+publishedAt: "2026-03-19"
+tag: "Research"
+image: "/images/projects/ai-image-gen.svg"
+---
+
+## Overview
+
+During his summer research internship at the Knowledge Discovery and Data Science (KDD) Lab at FAST-NUCES, Talha worked on multilingual and multi-prompt image generation systems built around diffusion-based models.
+
+## What He Built
+
+- Designed a custom `XLMRCLIPEncoder` that projected multilingual sentence embeddings into a 768-dimensional latent space so Stable Diffusion could process prompts across Urdu, Arabic, Chinese, Spanish, and English.
+- Implemented a multi-prompt splitting workflow using regex and spaCy to separate complex prompt structures into controllable sub-prompts.
+- Modified UNet cross-attention heads to support multi-prompt conditioning for richer scene generation.
+
+## Training and Evaluation
+
+- Trained models on COCO and Multi30k datasets at `256 x 256` resolution.
+- Used A100 GPUs for experimentation and tracked training progress through Weights & Biases.
+- Evaluated outputs with FID, IS, CLIPSim, and Semantic-Object-Accuracy style metrics.
+
+## Deployment Work
+
+Talha also contributed to an end-to-end unified repository that brought multilingual and multi-prompt pipelines together inside a Gradio web application. The deployment workflow was containerized with Docker to make experimentation and sharing easier.
+
+## Relevant Skills
+
+- Generative AI
+- Stable Diffusion
+- Diffusers
+- Natural Language Processing
+- XLMR
+- spaCy
+- Multilingual Embeddings
+- Computer Vision
+- Scene Graphs
+- Image Synthesis
+- Docker
+- Weights & Biases
+- Hugging Face Hub
+- Gradio

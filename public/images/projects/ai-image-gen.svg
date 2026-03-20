@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="imgOut" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#581c87"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="#0d1117"/>
+  <g fill="#111827" stroke="rgba(255,255,255,0.12)">
+    <rect x="52" y="102" width="182" height="170" rx="18"/>
+    <rect x="286" y="72" width="218" height="236" rx="20"/>
+    <rect x="552" y="110" width="200" height="140" rx="18" fill="url(#imgOut)"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#ffffff">
+    <text x="70" y="136" font-size="13">Build a cat</text>
+    <text x="70" y="168" font-size="13">بلی بنائیں</text>
+    <text x="70" y="200" font-size="13">猫を作る</text>
+  </g>
+  <g>
+    <rect x="314" y="100" width="162" height="24" rx="8" fill="#1e1b4b"/>
+    <rect x="314" y="132" width="162" height="24" rx="8" fill="#2d1b69"/>
+    <rect x="314" y="164" width="162" height="24" rx="8" fill="#1e1b4b"/>
+    <rect x="314" y="196" width="162" height="24" rx="8" fill="#2d1b69"/>
+    <rect x="314" y="228" width="162" height="24" rx="8" fill="#1e1b4b"/>
+    <g font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.56)">
+      <text x="286" y="116">Encoder Layer 1</text>
+      <text x="286" y="148">Encoder Layer 2</text>
+      <text x="286" y="180">Encoder Layer 3</text>
+      <text x="286" y="212">Encoder Layer 4</text>
+      <text x="286" y="244">Encoder Layer 5</text>
+    </g>
+    <g fill="#f59e0b">
+      <circle cx="356" cy="112" r="4"/><circle cx="430" cy="144" r="4"/><circle cx="372" cy="176" r="4"/><circle cx="458" cy="208" r="4"/><circle cx="402" cy="240" r="4"/>
+    </g>
+  </g>
+  <g stroke="rgba(255,255,255,0.28)" stroke-width="2.5" fill="none" marker-end="url(#arrow)">
+    <path d="M234 188H280"/>
+    <path d="M505 188H538"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="rgba(255,255,255,0.55)"/>
+    </marker>
+  </defs>
+  <g stroke="rgba(255,255,255,0.22)" stroke-width="1">
+    <path d="M572 128V232M592 128V232M612 128V232M632 128V232M652 128V232M672 128V232M692 128V232M712 128V232M732 128V232"/>
+    <path d="M552 128H752M552 145H752M552 162H752M552 179H752M552 196H752M552 213H752M552 230H752"/>
+  </g>
+</svg>

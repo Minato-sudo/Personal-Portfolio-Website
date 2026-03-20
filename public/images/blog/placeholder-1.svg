@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#0d1117"/>
+  <rect x="92" y="68" width="616" height="314" rx="24" fill="#111827" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="92" y="68" width="616" height="40" rx="24" fill="#1f2937"/>
+  <circle cx="126" cy="88" r="5" fill="#ef4444"/><circle cx="144" cy="88" r="5" fill="#f59e0b"/><circle cx="162" cy="88" r="5" fill="#10b981"/>
+  <g fill="#4ade80" font-family="Consolas, 'Courier New', monospace" font-size="18">
+    <text x="124" y="152">df = pd.read_csv('data.csv')</text>
+    <text x="124" y="188">X_train, X_test = split(features)</text>
+    <text x="124" y="224">model.fit(X_train, y_train)</text>
+    <text x="124" y="260">preds = model.predict(X_test)</text>
+    <text x="124" y="296">acc = evaluate(preds, y_test)</text>
+    <text x="124" y="332">print(f'Accuracy: {acc:.2f}')</text>
+  </g>
+</svg>

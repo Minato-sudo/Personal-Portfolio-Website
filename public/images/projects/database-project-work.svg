@@ -1,0 +1,55 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="600" fill="#0D1117"/>
+  <g opacity="0.12" stroke="#334155" stroke-width="1">
+    <path d="M60 90H1140"/>
+    <path d="M60 170H1140"/>
+    <path d="M60 250H1140"/>
+    <path d="M60 330H1140"/>
+    <path d="M60 410H1140"/>
+    <path d="M60 490H1140"/>
+  </g>
+  <rect x="58" y="62" width="486" height="474" rx="24" fill="#111827" stroke="#334155"/>
+  <text x="96" y="112" fill="#F8FAFC" font-size="30" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Relational Architecture</text>
+  <rect x="96" y="150" width="132" height="74" rx="14" fill="#1E3A8A"/>
+  <text x="120" y="184" fill="#DBEAFE" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Users</text>
+  <text x="116" y="205" fill="#BFDBFE" font-size="12" font-family="Consolas, monospace">user_id PK</text>
+  <rect x="280" y="150" width="142" height="74" rx="14" fill="#0F766E"/>
+  <text x="316" y="184" fill="#CCFBF1" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Cases</text>
+  <text x="309" y="205" fill="#99F6E4" font-size="12" font-family="Consolas, monospace">case_id PK</text>
+  <rect x="182" y="290" width="154" height="82" rx="14" fill="#7C3AED"/>
+  <text x="220" y="327" fill="#F3E8FF" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Verdicts</text>
+  <text x="205" y="350" fill="#DDD6FE" font-size="12" font-family="Consolas, monospace">judge_id FK · case_id FK</text>
+  <rect x="96" y="420" width="136" height="72" rx="14" fill="#1F2937"/>
+  <text x="122" y="454" fill="#E5E7EB" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Judges</text>
+  <rect x="300" y="420" width="136" height="72" rx="14" fill="#1F2937"/>
+  <text x="317" y="454" fill="#E5E7EB" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Accounts</text>
+  <path d="M228 187H252V331H182" stroke="#60A5FA" stroke-width="4" stroke-linecap="round"/>
+  <path d="M422 187H452V331H336" stroke="#2DD4BF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M164 420V384H228" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M368 420V384H292" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="252" cy="331" r="6" fill="#E2E8F0"/>
+  <circle cx="452" cy="331" r="6" fill="#E2E8F0"/>
+  <rect x="584" y="62" width="558" height="214" rx="24" fill="#111827" stroke="#334155"/>
+  <text x="624" y="112" fill="#F8FAFC" font-size="30" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Interface Layer</text>
+  <rect x="624" y="148" width="138" height="40" rx="10" fill="#1F2937"/>
+  <text x="659" y="173" fill="#E5E7EB" font-size="14" font-family="Segoe UI, Arial, sans-serif">NS_Login.ejs</text>
+  <rect x="782" y="148" width="176" height="40" rx="10" fill="#1F2937"/>
+  <text x="817" y="173" fill="#E5E7EB" font-size="14" font-family="Segoe UI, Arial, sans-serif">NS_DASHBOARD.ejs</text>
+  <rect x="978" y="148" width="128" height="40" rx="10" fill="#1F2937"/>
+  <text x="1010" y="173" fill="#E5E7EB" font-size="14" font-family="Segoe UI, Arial, sans-serif">NS_ACC.ejs</text>
+  <rect x="624" y="208" width="148" height="40" rx="10" fill="#1F2937"/>
+  <text x="659" y="233" fill="#E5E7EB" font-size="14" font-family="Segoe UI, Arial, sans-serif">NS_Judge.ejs</text>
+  <rect x="792" y="208" width="168" height="40" rx="10" fill="#1F2937"/>
+  <text x="846" y="233" fill="#E5E7EB" font-size="14" font-family="Segoe UI, Arial, sans-serif">NS_DB.sql</text>
+  <rect x="584" y="314" width="558" height="222" rx="24" fill="#111827" stroke="#334155"/>
+  <text x="624" y="362" fill="#F8FAFC" font-size="30" font-family="Segoe UI, Arial, sans-serif" font-weight="700">System Snapshot</text>
+  <rect x="624" y="388" width="148" height="104" rx="16" fill="#0F172A" stroke="#334155"/>
+  <text x="652" y="423" fill="#94A3B8" font-size="14" font-family="Segoe UI, Arial, sans-serif">Tables</text>
+  <text x="652" y="462" fill="#38BDF8" font-size="36" font-family="Consolas, monospace" font-weight="700">5</text>
+  <rect x="792" y="388" width="148" height="104" rx="16" fill="#0F172A" stroke="#334155"/>
+  <text x="819" y="423" fill="#94A3B8" font-size="14" font-family="Segoe UI, Arial, sans-serif">Views</text>
+  <text x="819" y="462" fill="#34D399" font-size="36" font-family="Consolas, monospace" font-weight="700">4</text>
+  <rect x="960" y="388" width="148" height="104" rx="16" fill="#0F172A" stroke="#334155"/>
+  <text x="982" y="423" fill="#94A3B8" font-size="14" font-family="Segoe UI, Arial, sans-serif">Queries</text>
+  <text x="983" y="462" fill="#A78BFA" font-size="36" font-family="Consolas, monospace" font-weight="700">SQL</text>
+</svg>
