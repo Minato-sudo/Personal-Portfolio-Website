@@ -1,0 +1,43 @@
+---
+title: "DDPM Reproducibility & Optimization"
+subtitle: "Inference-Time Optimization of Denoising Diffusion Probabilistic Models"
+publishedAt: "2026-04-29"
+summary: "A complete reproducibility study and inference-time optimization analysis of DDPM on CIFAR-10, demonstrating optimal generation quality at 200 inference steps with a 5x efficiency gain."
+image: "/images/projects/ddpm-benchmark.png"
+images:
+  - "/images/projects/ddpm-benchmark.png"
+team:
+  - name: "Talha Arshad"
+    role: "Deep Learning Engineer"
+    avatar: "/images/talha-avatar.jpg"
+    linkedIn: "https://linkedin.com/in/t-arshad/"
+link: "https://github.com/Minato-sudo/deeplearning-assignment2"
+---
+
+## Overview
+
+This project presents a complete reproducibility study and inference-time optimization analysis of Denoising Diffusion Probabilistic Models (DDPM) on the CIFAR-10 benchmark. Through systematic ablation studies, we identified critical performance characteristics of diffusion models that trade off computational cost with visual fidelity, while overcoming real-world hardware and architectural hurdles.
+
+## What Was Built
+
+- A fully reproduced DDPM pipeline using pre-trained weights to synthesize images across different configurations.
+- A DDIM step count ablation study exploring configurations from 1 to 1000 steps to map the exact quality-speed trade-off curve.
+- A deterministic vs stochastic eta parameter study characterizing the degradation behavior of DDIM image generation.
+- A cross-domain generalization benchmark using CelebA-HQ faces to test model robustness on 256x256 resolution constraints.
+
+## Why It Matters
+
+The research reveals an unexpected phase transition: optimal Frechet Inception Distance (FID) is achieved at 200 steps (42.13), not 1000 steps. Furthermore, generating images at 50 steps preserves 94% of optimal quality at just 20% of the computational cost. This highlights the practical importance of inference optimization for real-world generative AI deployments.
+
+## Stack
+
+- PyTorch
+- Diffusers (HuggingFace)
+- Denoising Diffusion Probabilistic Models (DDPM)
+- Denoising Diffusion Implicit Models (DDIM)
+- clean-fid
+- Kubuntu Linux
+
+## Outcome
+
+The project successfully generated over 24,000 images, rigorously documenting the gap between stochastic DDPM at full capacity and optimized deterministic DDIM execution. The findings provide concrete, actionable deployment recommendations for balancing generative fidelity against latency in resource-constrained environments.

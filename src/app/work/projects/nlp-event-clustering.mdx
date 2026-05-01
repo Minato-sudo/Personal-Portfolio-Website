@@ -1,0 +1,41 @@
+---
+title: "Event-Centric News Clustering"
+subtitle: "Parallel Event-Centric News Clustering & Storyline Summarization"
+publishedAt: "2026-05-01"
+summary: "A hardware-aware, three-stage NLP pipeline achieving 1.7x CPU parallel speedup for semantic embedding and leveraging CUDA-accelerated GPU inference for clustering 10,000 daily news articles."
+image: "/images/projects/nlp-benchmark.png"
+images:
+  - "/images/projects/nlp-benchmark.png"
+team:
+  - name: "Talha Arshad"
+    role: "NLP / Data Engineer"
+    avatar: "/images/talha-avatar.jpg"
+    linkedIn: "https://linkedin.com/in/t-arshad/"
+link: "https://github.com/Minato-sudo/"
+---
+
+## Overview
+
+The proliferation of online news sources has created severe information redundancy. This project presents a fully parallelized, three-stage pipeline for event-centric news clustering and storyline summarization. It successfully addresses a critical gap in modern NLP pipelines: processing efficiency at scale across tens of thousands of articles.
+
+## What Was Built
+
+- **Stage 1 (PDC Parallel Embedding):** A CPU multiprocessing architecture executing `all-MiniLM-L6-v2` embedding across distributed worker partitions.
+- **Stage 2 (Temporal-Semantic Clustering):** A unified K-Means clustering model operating on 385-dimensional feature vectors that combine semantic density with normalized publication timestamps.
+- **Stage 3 (GPU Abstractive Summarization):** A centroid-ranked text generation stage using `BART-large-CNN` on CUDA, condensing the most salient articles within a cluster into a coherent storyline.
+
+## Why It Matters
+
+Most NLP research evaluates accuracy while completely omitting computational efficiency constraints. By explicitly mapping tasks to optimal hardware components—distributing memory-bound embeddings to CPU worker threads while delegating heavy neural generation to CUDA tensor cores—the system achieves a 41% reduction in inference time (a 1.7x CPU speedup at 10,000 articles) without sacrificing normalized mutual information (NMI) clustering quality. 
+
+## Stack
+
+- Python Multiprocessing (PDC)
+- PyTorch (CUDA)
+- HuggingFace Transformers (BART, MiniLM)
+- scikit-learn (K-Means)
+- Sentence Embeddings
+
+## Outcome
+
+The project demonstrated quality-preserving scalability: NMI remained stable across 1k, 5k, and 10k dataset boundaries. Furthermore, GPU acceleration effectively collapsed the summarization stage from an unviable 6 hours sequentially down to just under 10 minutes, making the event-centric clustering engine practical for high-volume news ingestion deployments.
